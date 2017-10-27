@@ -1,48 +1,57 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Homework</title>
+    <meta charset="utf-8">
+    <title>Homework</title>
 </head>
+
 <body>
-	<div class="header">
-		<h1 class="header_title">Todos</h1>
-	</div>
-	<div class="main_body">
-		<div class="main_body_text">
-			<input type="text" size="40" placeholder="What needs to be done?"> <br>
-		</div>
-		<div class="main_body_list">
-			<div class = "main_body_list_button">
-				<input type="checkbox" value="HTML"> HTML <br>
-			</div>
-			<div class = "main_body_list_button">
-				<input type="checkbox" value="CSS"> CSS <br>
-			</div>
-			<div class = "main_body_list_button">
-				<input type="checkbox" value="JS"> JS <br>
-			</div>
-			<div class = "main_body_list_button">
-				<input type="checkbox" value="JS_TOOLS"> JS TOOLS <br>
-			</div>
-		</div> 
-	</div>
-	<div class="footer">
-		<div class="footer_elements">
-			3 elements left
-		</div>
-		<div class="footer_button_all">
-			<input type="button" value="All">
-		</div>
-		<div class="footer_button_active">
-			<input type="button" value="Active">
-		</div>
-		<div class="footer_button_completed">
-			<input type="button" value="Completed">
-		</div>
-		<div class="footer_button_clear">
-			<input type="button" value="Clear Completed">
-		</div>
-	</div>
+    <div class="todos-header">
+        <H1>todos</H1>
+    </div>
+
+    <div class="todos-add-element">
+        <button class="todos-add_select-all" aria-label="selest all as done"></button>
+        <input class="todos-add_new-element" placeholder="What needs to be done" aria-label="Add new element" />
+    </div>
+
+    <div class="todos-list">
+        <div class="todos-element_undone">
+            <input class="todos-element_undone-checkbox" type="checkbox" aria-label="mark us done" />
+            <textarea class="todos-element_undone-text">HTML</textarea>
+            <button class="todos-element_undone-delete" aria-label="Delete this element"> X </button>
+        </div>
+
+        <div class="todos-element_done">
+            <input class="todos-element_done-checkbox" type="checkbox" checked="checked" aria-label="mark us undone" />
+            <textarea class="todos-element_done-text">CSS</textarea>
+            <button class="todos-element_done-delete" aria-label="Delete this element"> X </button>
+        </div>
+
+        <div class="todos-element_undone">
+            <input class="todos-element_undone-checkbox" type="checkbox" aria-label="mark us done" />
+            <textarea class="todos-element_undone-text">JS</textarea>
+            <button class="todos-element_undone-delete" aria-label="Delete this element"> X </button>
+        </div>
+
+        <div class="todos-element_undone">
+            <input class="todos-element_undone-checkbox" type="checkbox" aria-label="mark us done" />
+            <textarea class="todos-element_undone-text">JS Tools</textarea>
+            <button class="todos-element_undone-delete" aria-label="Delete this element"> X </button>
+        </div>
+    </div>
+
+    <div class="todos-action-bar">
+        <div class="todos-action-bar_undone-counter" aria-label="Number of elements left">
+            3 items left
+        </div>
+        <button class="todos-action-bar_select-all" aria-label="Select all elements">All</button>
+        <button class="todos-action-bar_select-active" aria-label="Select active elements">Active</buttin>
+        <button class="todos-action-bar_select-completed" aria-label="Select completed elements">Completed</button>
+        <button class="todos-action-bar_clear-completed" aria-label="Clear completed elements">Clear completed</button>
+    </div>
+
 </body>
+
 </html>
