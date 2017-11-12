@@ -19,25 +19,25 @@
 
         <div class="todos-list">
             <div class="todos-element">
-                <input class="todos-element_checkbox" type="checkbox" aria-label="mark us done" />
+                <input class="todos-element_unready-mark" type="checkbox" aria-label="mark us done" />
                 <textarea class="todos-element_text">HTML</textarea>
                 <button class="todos-element_delete" aria-label="Delete this element"> X </button>
             </div>
 
             <div class="todos-element __done">
-                <input class="todos-element_checkbox" type="checkbox" checked="checked" aria-label="mark us undone" />
+                <input class="todos-element_ready-mark" type="checkbox" checked="checked" aria-label="mark us undone" />
                 <textarea class="todos-element_text">CSS</textarea>
                 <button class="todos-element_delete" aria-label="Delete this element"> X </button>
             </div>
 
             <div class="todos-element">
-                <input class="todos-element_checkbox" type="checkbox" aria-label="mark us done" />
+                <input class="todos-element_unready-mark" type="checkbox" aria-label="mark us done" />
                 <textarea class="todos-element_text">JS</textarea>
                 <button class="todos-element_delete" aria-label="Delete this element"> X </button>
             </div>
 
             <div class="todos-element">
-                <input class="todos-element_checkbox" type="checkbox" aria-label="mark us done" />
+                <input class="todos-element_unready-mark" type="checkbox" aria-label="mark us done" />
                 <textarea class="todos-element_text">JS Tools</textarea>
                 <button class="todos-element_delete" aria-label="Delete this element"> X </button>
             </div>
@@ -47,8 +47,8 @@
             <div class="todos-action-bar_undone-counter" aria-label="Number of elements left">
                 3 items left
             </div>
-            <div class="todos-action-bar_filters">
-            	<button class="todos-filter" aria-label="Select all elements">All</button>
+            <div class="todos_filters">
+            	<button class="todos-filter __active" aria-label="Select all elements">All</button>
             	<button class="todos-filter" aria-label="Select active elements">Active</button>
             	<button class="todos-filter" aria-label="Select completed elements">Completed</button>
             </div>
