@@ -1,0 +1,49 @@
+.todos-add-element {
+    background: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+}
+    .todos-add-element:after {
+        content: '';
+        display: block;
+        clear: both;
+        }
+    .todos-add_select-all {
+        width: 64px;
+        height: 64px;
+        background: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        float: left;
+        position: relative;
+        }
+        .todos-add_select-all_icon {
+            width: 24px;
+            height: 12px;
+            background: url('../../image/icons/select-all.png') no-repeat 0 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -6px -12px;
+            }
+    .todos-add_new-element-w {
+        overflow: hidden;
+        }
+        .todos-add_new-element {
+            width: 100%;
+            box-sizing: border-box;
+            border: 0;
+            background: none;
+            color: #666;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 200;
+            padding-right: 12px;
+            margin-top: 14px;
+            outline: none;
+            }
+            .todos-add_new-element::placeholder {
+                color: #ccc;
+                font-style: italic;
+                }
