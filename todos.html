@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Homework</title>
+</head>
+
+<body>
+    <div class="todos-header">
+        <h1>todos</h1>
+    </div>
+
+    <div class="todos-body">
+    	<div class="todos-add-element">
+            <button class="todos-add_select-all" aria-label="selest all as done"></button>
+            <input class="todos-add_new-element" placeholder="What needs to be done" aria-label="Add new element" />
+        </div>
+
+        <div class="todos-list">
+            <div class="todos-element">
+                <input class="todos-element_unready-mark" type="checkbox" aria-label="mark us done" />
+                <textarea class="todos-element_text">HTML</textarea>
+                <button class="todos-element_delete" aria-label="Delete this element"> X </button>
+            </div>
+
+            <div class="todos-element __done">
+                <input class="todos-element_ready-mark" type="checkbox" checked="checked" aria-label="mark us undone" />
+                <textarea class="todos-element_text">CSS</textarea>
+                <button class="todos-element_delete" aria-label="Delete this element"> X </button>
+            </div>
+
+            <div class="todos-element">
+                <input class="todos-element_unready-mark" type="checkbox" aria-label="mark us done" />
+                <textarea class="todos-element_text">JS</textarea>
+                <button class="todos-element_delete" aria-label="Delete this element"> X </button>
+            </div>
+
+            <div class="todos-element">
+                <input class="todos-element_unready-mark" type="checkbox" aria-label="mark us done" />
+                <textarea class="todos-element_text">JS Tools</textarea>
+                <button class="todos-element_delete" aria-label="Delete this element"> X </button>
+            </div>
+        </div>
+
+        <div class="todos-action-bar">
+            <div class="todos-action-bar_undone-counter" aria-label="Number of elements left">
+                3 items left
+            </div>
+            <div class="todos_filters">
+            	<button class="todos-filter __active" aria-label="Select all elements">All</button>
+            	<button class="todos-filter" aria-label="Select active elements">Active</button>
+            	<button class="todos-filter" aria-label="Select completed elements">Completed</button>
+            </div>
+            <button class="todos-action-bar_clear-completed" aria-label="Clear completed elements">Clear completed</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
