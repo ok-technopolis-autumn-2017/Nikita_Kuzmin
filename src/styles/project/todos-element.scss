@@ -1,15 +1,17 @@
+@import "../config/globals";
+
 .todos-element{
     background: none;
     display: flex;
     align-content: center;
     justify-content: space-between;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $c-light;
     }
     .todos-element_ready-mark,
     .todos-element_unready-mark{
         position: relative;
-        width: 60px;
-        height: 60px;
+        width: $s-mark;
+        height: $s-mark;
         }
         .todos-element_ready-mark_checkbox,
         .todos-element_unready-mark_checkbox{
@@ -25,47 +27,47 @@
             cursor: inherit;
             }
         .todos-element_ready-mark_icon {
-            background: #ffffff url('../../image/icons/completed.png') no-repeat 10px 10px;
+            background: $c-white url('../../images/icons/completed.png') no-repeat 10px 10px;
             position: absolute;
             background-size: 20px;
-            width: 40px;
-            height: 40px;
+            width: $s-mark-icon;
+            height: $s-mark-icon;
             left: 50%;
             top: 50%;
-            margin: -20px -20px;
+            margin: -$offset_5x;;
             border-radius: 50%;
-            border: 1px solid #61c3b1;
+            border: $offset_quarter solid $c-blue;
             z-index: 0;
             }
         .todos-element_unready-mark_icon {
-            background: #ffffff;
+            background: $c-white;
             position: absolute;
-            width: 40px;
-            height: 40px;
+            width: $s-mark-icon;
+            height: $s-mark-icon;
             left: 50%;
             top: 50%;
-            margin: -20px -20px;
+            margin: -$offset_5x;
             z-index: 0;
             border-radius: 50%;
-            border: 1px solid #e7e7e7;
+            border: 1px solid $c-light;
             }
     .todos-element_text {
         background: none;
-        color: #666666;
+        color: $c-gray;
         position: relative;
         flex: 1 0;
         align-self: stretch;
-        height: 60px;
+        height: $h-element;
         overflow: hidden;
         border: none;
-        font-size: 24px;
+        font-size: $fs_xx-large;
         cursor: inherit;
         outline: none;
         }
     .todos-element_delete {
         position: relative;
-        height: 60px;
-        width: 40px;
+        height: $h-element;
+        width: $w-element;
         }
         .todos-element_delete_button {
             position: absolute;
@@ -80,19 +82,19 @@
             z-index: 1;
             }
         .todos-element_delete_icon {
-            background: url('../../image/icons/close.png') no-repeat;
+            background: url('../../images/icons/close.png') no-repeat;
             position: absolute;
             opacity: 0;
-            width: 18px;
-            height: 18px;
+            width: $s-delete-icon;
+            height: $s-delete-icon;
             left: 50%;
             top: 50%;
-            margin: -9px -9px;
+            margin: (-$offset_2x - $offset_quarter) (-$offset_2x - $offset_quarter);
             z-index: 0;
             }
 .todos-element:hover {
     cursor: pointer;
-    background-color: #fafafa;
+    background-color: $c-white-dark;
     }
 .todos-element:hover .todos-element_delete_icon {
     opacity: 1;

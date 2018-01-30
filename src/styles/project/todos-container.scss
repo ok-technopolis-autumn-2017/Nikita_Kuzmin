@@ -1,6 +1,8 @@
+@import "../config/globals";
+
 .todos-container {
-    background: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    background: $c-white;
+    box-shadow: $box-shadow;
     position: relative;
     }
     .todos-container:before,
@@ -8,17 +10,17 @@
         content: '';
         position: absolute;
         top: 100%;
-        background: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+        background: $c-white;
+        box-shadow: $box-shadow;
         z-index: -1;
         }
         .todos-container:before {
             height: 10px;
-            left: 4px;
-            right: 4px;
+            left: $offset;
+            right: $offset;
             }
         .todos-container:after {
             height: 5px;
-            left: 2px;
-            right: 2px;
+            left: $offset_half;
+            right: $offset_half;
             }
