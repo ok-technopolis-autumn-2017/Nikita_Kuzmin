@@ -7,14 +7,12 @@
     justify-content: space-between;
     border-bottom: 1px solid $c-light;
     }
-    .todos-element_ready-mark,
-    .todos-element_unready-mark{
+    .todos-element_mark{
         position: relative;
         width: $s-mark;
         height: $s-mark;
         }
-        .todos-element_ready-mark_checkbox,
-        .todos-element_unready-mark_checkbox{
+        .todos-element_mark-checkbox{
             position: absolute;
             border: 0;
             opacity: 0;
@@ -26,20 +24,7 @@
             z-index: 1;
             cursor: inherit;
             }
-        .todos-element_ready-mark_icon {
-            background: $c-white url('../../images/icons/completed.png') no-repeat 10px 10px;
-            position: absolute;
-            background-size: 20px;
-            width: $s-mark-icon;
-            height: $s-mark-icon;
-            left: 50%;
-            top: 50%;
-            margin: -$offset_5x;;
-            border-radius: 50%;
-            border: $offset_quarter solid $c-blue;
-            z-index: 0;
-            }
-        .todos-element_unready-mark_icon {
+        .todos-element_mark-icon {
             background: $c-white;
             position: absolute;
             width: $s-mark-icon;
@@ -51,19 +36,22 @@
             border-radius: 50%;
             border: 1px solid $c-light;
             }
-    .todos-element_text {
-        background: none;
-        color: $c-gray;
-        position: relative;
-        flex: 1 0;
-        align-self: stretch;
+    .todos-element_text-w {
+        @include clearfix();
         height: $h-element;
-        overflow: hidden;
-        border: none;
-        font-size: $fs_xx-large;
-        cursor: inherit;
-        outline: none;
+        display: grid;
+        flex: 1 0;
+        .todos-element_text {
+            background: none;
+            color: $c-gray;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            font-size: $fs_xx-large;
+            cursor: inherit;
+            outline: none;
         }
+    }
     .todos-element_delete {
         position: relative;
         height: $h-element;
@@ -98,4 +86,22 @@
     }
 .todos-element:hover .todos-element_delete_icon {
     opacity: 1;
+}
+.todos-element.__done {
+    .todos-element_mark-icon {
+        background: $c-white url('../../images/icons/completed.png') no-repeat 10px 10px;
+        position: absolute;
+        background-size: 20px;
+        width: $s-mark-icon;
+        height: $s-mark-icon;
+        left: 50%;
+        top: 50%;
+        margin: -$offset_5x;;
+        border-radius: 50%;
+        border: $offset_quarter solid $c-blue;
+        z-index: 0;
+    }
+}
+.todos-element.__hide {
+    display: none;
 }
